@@ -251,7 +251,7 @@
             const pieces = 'IJLOSTZ';
             const type = pieces[Math.floor(Math.random() * pieces.length)];
             const index = 'IJLOSTZ'.indexOf(type) + 1;
-            return SHAPES[index];
+            return SHAPES[index].map(row => row.slice());
         }
 
         // Reset player with new piece
